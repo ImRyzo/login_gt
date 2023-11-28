@@ -1,0 +1,130 @@
+/* 1.css */
+
+/* 
+===============================================================================
+# CSS untuk Halaman Login
+===============================================================================
+*/
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Warna latar belakang default */
+    color: #333; /* Warna teks default */
+    transition: background-color 0.3s, color 0.3s; /* Transisi warna latar belakang dan teks */
+}
+
+/* Login Container Styling */
+.login-container {
+    background-color: #fff; /* Warna latar belakang container login */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    width: 300px;
+    color: #333; /* Warna teks pada container login */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transisi warna latar belakang, teks, dan bayangan */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Styling */
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: #fff; /* Warna latar belakang input */
+    color: #333; /* Warna teks input */
+    border: 1px solid #ddd; /* Garis tepi */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transisi warna latar belakang, teks, dan tepi */
+}
+
+/* Input Focus Styling */
+input:focus {
+    border-color: #3498db; /* Warna tepi saat input di-focus */
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transisi warna latar belakang dan teks tombol */
+}
+
+/* Default Button Styling */
+button.default {
+    background-color: #3498db; /* Warna latar belakang tombol default */
+    color: #fff; /* Warna teks tombol default */
+    border: none;
+    border-radius: 4px;
+}
+
+/* Hover Effect for Default Button */
+button.default:hover {
+    background-color: #2980b9; /* Warna latar belakang saat tombol dihover */
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s; /* Animasi rotasi */
+    color: #777; /* Warna ikon tombol tema */
+    content: '🌙'; /* Ikon bulan (default) */
+}
+
+/* Dark Theme Styling */
+body.dark-theme {
+    background-color: #607D8B; /* Warna latar belakang tema gelap */
+    color: #ecf0f1; /* Warna teks tema gelap */
+}
+
+/* Dark Theme Container Styling */
+.dark-theme .login-container {
+    background-color: #34495e; /* Warna latar belakang container login tema gelap */
+    color: #ecf0f1; /* Warna teks pada container login tema gelap */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Bayangan lembut pada tema gelap */
+}
+
+/* Dark Theme Input Styling */
+.dark-theme input {
+    background-color: #445566; /* Warna latar belakang input tema gelap */
+    color: #ecf0f1; /* Warna teks input tema gelap */
+    border: 1px solid #566573; /* Garis tepi input tema gelap */
+}
+
+/* Dark Theme Input Focus Styling */
+.dark-theme input:focus {
+    border-color: #3498db; /* Warna tepi saat input di-focus pada tema gelap */
+}
+
+/* Dark Theme Default Button Styling */
+.dark-theme button.default {
+    background-color: #FFCA28; /* Warna latar belakang tombol default tema gelap */
+    color: #fff; /* Warna teks tombol default tema gelap */
+}
+
+/* Hover Effect for Dark Theme Default Button */
+.dark-theme button.default:hover {
+    background-color: #FFCA28; /* Warna latar belakang saat tombol dihover pada tema gelap */
+}
+
+/* Dark Theme Theme Toggle Button Styling */
+body.dark-theme .theme-toggle {
+    color: #ddd; /* Warna ikon tombol tema pada tema gelap */
+    content: '☀️'; /* Ikon matahari pada tema gelap */
+}
+
+/* Additional Styles can be added here as needed */
+

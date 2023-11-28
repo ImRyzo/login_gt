@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- Tombol untuk mengganti tema -->
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+    
+    <!-- Kontainer untuk formulir login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <!-- Input untuk username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Input untuk password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Tombol untuk login -->
+            <button type="button" class="default" onclick="validateLogin()">Login</button>
+        </form>
+    </div>
+
+    <!-- Memasukkan skrip JavaScript -->
+    <script src="1.js"></script>
+</body>
+</html>
